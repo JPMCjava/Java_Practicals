@@ -1,0 +1,276 @@
+Class Object 
+Hello 
+Variable
+Data type
+Accept Different values
+Scanner
+Methods
+-----------------
+Operators
+-------
+
++
+-
+*
+<
+
+2+4
+
+Single
+
+++,-- sizeof
+
+num=10;
+num++;
+
+Arithmetic
+
++ - * 
+/
+
+16/5=
+
+19%4=
+
+ 5/2 =
+% 5%2=
+ass
+
+
++=
+-+
+*=
+/=
+%=
+
+a=10
+
+a=a+20;
+a=30;
+
+a-=10;
+a=20
+
+a*=3;
+a=60;
+
+a/=10;
+a=6
+
+a%=5;
+a=1
+
+bit
+&
+|
+^
+
+&
+1	1	=1
+1	0	=0
+0	1	=0
+0	0	=0
+
+0101
+0110
+----
+0100= 4
+
+a=5
+b=6
+res=a&b;
+res=4
+
+
+|
+
+1	1	=1
+1	0	=1
+0	1	=1
+0	0	=0
+
+
+0101
+0110
+-----
+0111 =7
+
+^
+1	1	=0
+1	0	=1
+0	1	=1
+0	0	=0
+
+0101
+0110
+----
+0011= 3
+
+relational
+
+<
+>
+<=
+>=
+==
+!=
+
+
+=
+==
+
+
+
+logical
+
+&&
+||
+!
+
+
+&&
+T	T=T
+T	F=F
+F	T=F
+F	F=F
+
+||
+
+T	T=T
+T	F=T
+F	T=T
+F	F=F
+
+!
+t=f
+f=t
+
+
+
+
+num1=true
+num2=false
+
+res=num1&&num2
+res=(4<5)||(5>9)
+res1=!res;
+
+--------------------------
+
+
+
+?:
+
+()?A:B
+
+
+int num1=20;
+double r=3.14;
+int res=num1*r;
+
+double 
+int
+
+
+AR=l*b
+PR=2(l+b)
+
+
+
+WAP Accept selling price and cost price from the user and display profit or loss
+
+
+
+res=(sp>cp)? sp-cp :cp-sp ;
+
+
+-------------------------
+Conditional Statments:
+----------------------
+1:If
+2:If else
+3:Else if
+4:Switch
+5:Nested
+
+1: if conditional statment:
+
+
+Syntax:
+
+if(Condition)
+{
+	Statment Block;
+}
+
+
+WAP to accept a no from the user and if no is positive than find oput the square.
+
+2:If else
+Syntax:
+
+if(Condition)
+{
+	Statment Block;
+}
+else
+{
+	Ststment Block;
+}
+
+
+
+WAP to accept a no from user and check it is even or odd
+
+3:Else if
+
+Syntax:
+
+if(Condition)
+{
+	Statment Block;
+}
+else if(condition) 
+{
+	Ststment Block;
+}
+else if(condition) 
+{
+	Ststment Block;
+}
+----
+-----
+-----
+else
+{
+	Stament block;
+}
+
+
+
+--------------
+switch Case:
+
+switch(Expression)
+{
+	case 1:
+		statment block;
+	break;
+	case 2:
+		statment block;
+	break;
+------
+0-------
+--------
+	default:
+		Statment Block;
+	break;	
+}
+
+
+
+
+
+
+
+
