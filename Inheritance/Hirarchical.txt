@@ -1,0 +1,87 @@
+package Inheritance_EG;
+
+import java.util.Scanner;
+
+public class Pro1 
+{
+	int[] num;
+	int size,i,j,temp;
+	Scanner sc=new Scanner(System.in);
+	public void acceept()
+	{
+		System.out.println("Enter the size");
+		size=sc.nextInt();
+		num=new int[size];
+		System.out.println("Enter "+size+" Numbers:");
+		for(i=0;i<size;i++)
+		{
+			num[i]=sc.nextInt();
+		}
+		
+	}
+}
+---------------------
+package Inheritance_EG;
+
+public class Pro2 extends Pro1 
+{
+	public void asc()
+	{
+		for(i=0;i<size;i++)
+		{
+			for(j=i+1;j<size;j++)
+			{
+				if(num[i]>num[j])
+				{
+					temp=num[i];
+					num[i]=num[j];
+					num[j]=temp;
+				}
+			}
+		}
+		System.out.println("NUmbers is ascending order is =");
+		for(i=0;i<size;i++)
+		{
+			System.out.println(num[i]);
+		}
+	}
+
+}
+------------
+package Inheritance_EG;
+
+public class Pro3 extends Pro1 
+{
+	public void grt()
+	{
+		
+		temp=num[0];
+		for(i=0;i<size;i++)
+		{
+			if(temp<num[i])
+			{
+				temp=num[i];
+			}
+		}
+		System.out.println("The greater no is ="+temp);
+	}
+
+}
+--------------------------------
+package Inheritance_EG;
+
+public class Heir_inh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pro2 obj=new Pro2();
+		obj.acceept();
+		obj.asc();
+		Pro3 obj1=new Pro3();
+		obj1.acceept();
+		obj1.grt();
+	}
+
+}
+--------------------
