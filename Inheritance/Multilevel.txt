@@ -1,0 +1,89 @@
+package Inheritance_EG;
+
+import java.util.Scanner;
+
+public class demo1 
+{
+	int num1,num2,num3,res,fact=1;
+	Scanner sc=new Scanner(System.in);
+	public void arithmetic()
+	{
+		
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		
+		res=num1+num2;
+		System.out.println("The add of "+num1+" and "+num2+" is ="+res);
+		res=num1-num2;
+		System.out.println("The sub of "+num1+" and "+num2+" is ="+res);
+		res=num1*num2;
+		System.out.println("The mul of "+num1+" and "+num2+" is ="+res);
+		res=num1/num2;
+		System.out.println("The div of "+num1+" and "+num2+" is ="+res);
+		res=num1%num2;
+		System.out.println("The mod of "+num1+" and "+num2+" is ="+res);
+	}
+
+}
+---------------------
+package Inheritance_EG;
+
+public class demo2 extends demo1
+{
+	public void grt_3no()
+	{
+		
+		System.out.println("Enter three numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		num3=sc.nextInt();
+		if(num1>num2 &&num1>num3)
+		{
+			System.out.println("Num1 is greater ="+num1);
+		}
+		else if(num2>num1 && num2>num3)
+		{
+			System.out.println("NUm2 is graetre ="+num2);
+		}
+		else
+		{
+			System.out.println("NUm3 uis greater="+num3);
+		}
+	}
+}
+-------------------
+package Inheritance_EG;
+
+public class demo3 extends demo2 {
+	
+	public void fact()
+	{
+		System.out.println("Enter a number");
+		num1=sc.nextInt();
+		while(num1>0)
+		{
+			fact=fact*num1;
+			num1--;
+		}
+		System.out.println("The factorial is ="+fact);
+	}
+
+}
+---------------------------------
+package Inheritance_EG;
+
+public class Multilevel_INH {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		demo3 obj=new demo3();
+		obj.arithmetic();
+		obj.grt_3no();
+		obj.fact();
+
+	}
+
+}
+
